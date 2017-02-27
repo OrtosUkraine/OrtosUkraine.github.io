@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Страница "О Нас" на сайте ortos.ua</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        body{
+            width: 940px;
+            margin: 0 auto;
+            padding: 0 auto;
+            font-family: Open Sans;
+        }
+        #h_test h1{
+            display: inline-block;
+            margin: 20px 0 -35px 10px;
+            color: #f6f6f6;
+            font-size: 700%;
+        }
+        #h_test:hover h1{
+            color: darkorange;
+            -webkit-transition: all 2s ease;
+              -moz-transition: all 2s ease;
+              -o-transition: all 2s ease;
+              transition: all 2s ease;
+        }
+        .block{
+            max-width: 940px;
+            max-height: 100%;
+            background: #f6f6f6;
+            border-radius: 10px;
+            color: #808285;
+        }
+        
+        #block_1_whoWeAre{
+            padding: 5px 10px 10px 10px;
+            margin-top: -5px;
+        }
+        
+        #block_2_video{
+            height: 260px;
+            margin-top: 0px;
+        } 
+        #block_text a:hover{
+            background-color: darkorange;
+            border-color: white;
+            color: white;
+            -webkit-transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;;
+              -o-transition: all 0.5s ease;;
+              transition: all 0.5s ease;
+        }
+        #block_2 h1{
+            text-align: right;
+            margin: 20px 70px -35px 0px;
+            color: #f6f6f6;
+            font-size: 700%;
+        }
+        #block_2:hover h1{
+            color: darkorange;
+            -webkit-transition: all 2s ease;
+              -moz-transition: all 2s ease;;
+              -o-transition: all 2s ease;;
+              transition: all 2s ease;
+        }
+        
+        #block_text{
+            color: #808285;
+            text-align: left;
+            padding: 0 10px 0 10px;
+            display: inline-block;
+            max-width:400px;
+        }
+        #block_text p{
+            padding: 0 10px 0 10px;
+        }
+        #block_text h3{
+            padding: 0 10px 0 10px;
+        }
+        #block_text span{
+           padding-left:10px;
+        }
+        #block_3{
+            position: relative;
+            width: 940px;
+            height: 200px;
+            background: url(block_3_background.png);
+            text-align: center;
+            color: white;
+            margin-top: -5px;
+        }
+        #block_3 h2{
+            padding-top: 30px;
+            font-size: 200%;
+        }
+        #block_4{
+            height: 350px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: -5px;
+            padding-top: 50px;
+        }
+        #block_4 .unique_services img{
+            padding-top: 7px;
+        }
+        .block_4_privilege{
+            width:33%; 
+            float:left;
+        }
+        .block_4_privilege p{
+            padding: 0 10px 0 10px;
+        }
+        .block_4_privilege img{
+            margin: 10px 0 0 0;
+        }
+        .unique_services{
+            display: inline-block;
+            text-align: left;
+            margin: 10px 50px 20px 30px;
+        }
+        .unique_services h3{
+            display: inline-block;
+            margin: 0;
+        }
+        .unique_services p{
+            text-align: left;
+            padding: 0 20px 0 0;
+        }
+        .unique_services img{
+            float: left;
+            padding: 0 30px 0 0;
+        }
+        #block_5{
+            height: 650px;
+            margin-top: -5px;
+            text-align: center;
+        }
+        #block_5 img{
+            margin: 15px;
+        }
+        #block_6{
+            height: 520px;
+            margin-top: -5px;
+            text-align: center;
+            padding: 20px 0 0 0;
+        }
+        #block_6 .row{
+            margin: 0 auto;
+        }
+        .block_6_diploma{
+            text-align: left;
+            width:45%; 
+            float:left;
+            padding: 20px 20px 20px 25px;
+        }
+        .block_6_diploma h3{
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .block_6_row{
+            width: 50%;
+            display: inline-block;
+        }
+        #block_7{
+            height: 250px;
+            margin-top: -5px;
+            text-align: center;
+        }
+        #block_7 img{
+            float:left;
+            margin: 25px 20px 40px 25px;
+        }
+        #block_7 p{
+            margin: 25px 25px 0 0;
+            text-align: left;
+        }
+        #block_8{
+            height: 640px;
+            margin-top: -5px;
+            text-align: center;
+        }
+        #block_9{
+            height: 200px;
+            margin-top: -5px;
+            text-align: center;
+        }
+        .block_last{
+            max-width: 940px;
+            max-height: 100%;
+            background: #FFF;
+            border-radius: 10px;
+            color: #808285;
+        }
+        #block_text a{
+            display: inline-block;
+            border: 1px solid #808285;
+            border-radius: 5px;
+            padding: 10px 10px 10px 10px;
+            text-decoration: none;
+            color: #808285;
+        }
+        #social img{
+            margin: 10px;
+            -moz-transition: all 1s ease-out;
+            -o-transition: all 1s ease-out;
+            -webkit-transition: all 1s ease-out;
+        }
+        #social img:hover{
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2); 
+        }
+    </style>
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+    </script>
+-->
+</head>
+<body>
+<!--    BLOCK 1: WHO WE ARE-->
+    <div class="container" id="h_test">
+        <div class="row">
+            <h1>Кто мы такие?</h1>
+            <div class="block" id="block_1_whoWeAre"><p>Сеть ортопедических салонов ОРТОС - это магазин ортопедических товаров для Вашего здоровья и красоты. Мы заботимся о каждом покупателе и предоставляем все необходимые товары для реабилитации, профилактики и лечения.</p>
+            <p>Сеть ортопедических салонов ORTOS вышла на украинский рынок в 2014 году с широким ассортиментом товаров для спины, стоп, суставов, а также других товаров для поддержки Вашего здоровья. На данный момент активно работают 7 салонов в Киеве и 1 во Львове.</p></div>
+        </div>
+    </div>
+    <br><br>
+<!--    BLOCK 2: VIDEO-->
+    <div id="block_2" id="h_test">
+        <div class="row">
+            <h1>Видео</h1>
+            <div class="block" id="block_2_video">
+                <div class="col-md-6" style="float:left; display:inline-block;">
+                    <iframe width="470" height="260" src="https://www.youtube.com/embed/fZKmy_Ee8So" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6" id="block_text"><br>
+                    <h3>ORTOS на VII Международном Медицинском Форуме</h3><p>Ортос постоянно совершенствует свою продукцию, улучшая качество ортопедических стелек, бандажей, корсетов и других незаменимых для здоровья изделий.</p>
+                    <span><a href="https://www.youtube.com/user/ortosUA" target="_blank">Больше видео</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<!--    BLOCK 3: OUR MISSION-->
+    <div class="container" id="h_test">
+        <div class="row">
+            <h1 style="font-size:600%;">Миссия компании</h1>
+            <div class="col-md-12" id="block_3">
+                <h2 style="margin-top:0;">Помочь людям улучшить свое здоровье...</h2><p>... с помощью качественной продукции и индивидуального подхода. <br>Ведь нам очень важно, чтобы каждый нашел то, что ищет!</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<!--    BLOCK 4: OUR PRIVILEGES-->
+    <div class="container" id="h_test">
+        <div class="row">
+            <h1 style="font-size:540%;">Наши преимущества</h1>
+            <div class="block">
+            <div id="block_4"> 
+                <div class="block_4_privilege">
+                    <img src="like.png"><br>
+                    <h3>Лучшие товары и бренды</h3>
+                    <p>Только лучшие и качественные товары производителей из разных стран. Каждый товар отлично зарекомендовал себя среди покупателей и пользуется большим спросом.</p>
+                </div>
+                
+                <div class="block_4_privilege">
+                    <img src="users-1.png"><br>
+                    <h3>Персонал и врачи</h3>
+                    <p>Каждый покупатель важен для нас. И мы с высоким уважением и заботой предоставим квалифицированную консультацию при выборе товара.</p>
+                </div>
+                
+                <div class="block_4_privilege">
+                    <img src="placeholder-2.png"><br>
+                    <h3>Широкая сеть салонов</h3>
+                    <p>Опираясь на покупателя, мы позаботились об удобном расположении каждого нашего салона. Салоны в Киеве, Львове и вскоре и других городах Украины!</p>
+                </div>
+            </div>
+            <div class="col-md-12" id="block_4" style="padding-top:0;"> 
+                <div class="block_4_privilege">
+                    <img src="sign-1.png"><br>
+                    <h3>Доставка по всей Украине</h3>
+                    <p>Если Вы не в Киеве, а Вам нужен товар – не проблема. Мы предоставляем услугу отправки Новой Почтой по всей Украине.</p>
+                </div>
+                
+                <div class="block_4_privilege">
+                    <img src="like-2.png"><br>
+                    <h3>Доставка в мед. учереждения</h3>
+                    <p>Предоставляем возможность получить товар в медицинском учреждении в день заказа.</p>
+                </div>
+                
+                <div class="block_4_privilege">
+                    <img src="gift.png"><br>
+                    <h3>Скидки и акции</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis maximus lectus sit amet fermentum. Nunc augue mauris, tincidunt tincidunt efficitur id, condimentum id nibh.</p>
+                </div>
+            </div>
+            </div>
+        </div>  
+    </div>
+    <br><br>
+    
+<!--    BLOCK 4 & 3/4: UNIQUE SERVICES-->
+    <div class="container" id="h_test">
+        <div class="row">
+            <h1 style="font-size:580%;">Уникальные услуги</h1>
+            <div class="block">
+            <div class="col-md-12" id="block_4" style="padding-top:0;"> 
+                
+                <div style="padding-top:30px;">
+                    <div class="unique_services">
+                        <img src="layers-1.png"><h3>Индивидуальные стельки</h3><p>Изготовление индивидуальных ортопедических стелек с использованием современной аппаратуры, такой как подосканнер, бароподометрия и анализ осанки. Тщательная проверка и диагностика всего Вашего организма.</p>
+                    </div>
+                    <div class="unique_services">
+                        <img src="user-5.png"><h3>Нестандартные размеры</h3><p>ORTOS занимается индивидуальным пошивом бандажей и корсетов для нестандартных размеров. Если у Вас нестандартный размер, Вы можете обратиться к нашим консультантам в магазине и оформить заказ на индивидуальный пошив.</p>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>  
+    </div>
+    <br><br>
+    
+<!--    BLOCK 5: INFOGRAPHICS-->
+    <div class="container" id="h_test">
+        <div class="row">
+                <h1>Статистика</h1>
+                <div class="block" id="block_5">
+                    <br><br>
+                    <img src="infographics_ortos_1.png">
+                    <img src="infographics_ortos_2.png">
+                    <img src="infographics_ortos_3.png">
+                    <img src="infographics_ortos_4.png">
+                </div>
+            </div>
+    </div>
+    <br><br>
+
+<!--    BLOCK 6: OUR DIPLOMAS-->
+    <div class="container" id="h_test">
+        <div class="row">
+            <h1 style="font-size:580%;">Другие достижения</h1>
+            <div class="block" id="block_6">
+                <div class="row">
+                <div class="block_6_diploma">
+                    <img src="diploma_1.png">
+                    <h3>Очень крутой диплом</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis maximus lectus sit amet fermentum. Nunc augue mauris, tincidunt tincidunt efficitur id, condimentum id nibh.</p>
+                </div>
+                
+                <div class="block_6_diploma">
+                    <img src="diploma_2.png">
+                    <h3>Не менее крутая лицензия</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis maximus lectus sit amet fermentum. Nunc augue mauris, tincidunt tincidunt efficitur id, condimentum id nibh.</p>
+                </div>
+                
+                <div class="block_6_diploma">
+                    <img src="diploma_3.png">
+                    <h3>Какой-то документ по-проще</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis maximus lectus sit amet fermentum. Nunc augue mauris, tincidunt tincidunt efficitur id, condimentum id nibh.</p>
+                </div>
+                
+                <div class="block_6_diploma">
+                    <img src="diploma_4.png">
+                    <h3>Еще что-то сюда</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis maximus lectus sit amet fermentum. Nunc augue mauris, tincidunt tincidunt efficitur id, condimentum id nibh.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!--    BLOCK 7: SOCIAL ACTIVITY-->
+    <div class="container" id="h_test">
+        <div class="row">
+                <h1 style="font-size:450%;">Социальная активность</h1>
+                <div class="block" id="block_7">
+                    <br><br>
+                    <img src="megaphone-2.png"><p>Социальная активность – это важная составляющая нашей компании, так ортопедический салон ОРТОС является активным участником социальных проектов и благотворительных акций. На сегодня мы сотрудничаем с молодежным движением, которое проводит благотворительные турниры с целью сбора денег для лечения детей с разными заболеваниями.</p>
+                </div>
+            </div>
+    </div>
+    <br><br>
+    <!--    BLOCK 8: EMPLOYEES-->
+    <div class="container" id="h_test">
+        <div class="row">
+                <h1 style="font-size:660%;">Сотрудники</h1>
+                <div class="block" id="block_8">
+                    <br>
+                    <img src="our_team.png">
+                </div>
+            </div>
+    </div>
+    <br><br>
+    <!--    BLOCK 9: SOCIAL-->
+    <div class="container" id="h_test">
+        <div class="row">
+<!--                <h1 style="font-size:600%;">Социальные сети</h1>-->
+                <div class="block_last" id="block_9">
+                    <div id="block_9_textBlock">
+                        <span id="social">
+                            <a href="https://www.facebook.com/ortos.ua/"><img src="icon_facebook.png"></a>
+                            <a href="https://vk.com/ortos_kiev"><img src="icon_vk.png"></a>
+                            <a href="https://www.youtube.com/user/ortosUA/"><img src="icon_youtube.png"></a>
+                            <a href="https://ok.ru/group/53497968918774"><img src="icon_odk.png"></a>
+                        </span><br><br>
+                        <div id="block_text"><span><a href="#" target="_blank">Подписаться на рассылку</a></span></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><br>
+    
+</body>
+</html>
